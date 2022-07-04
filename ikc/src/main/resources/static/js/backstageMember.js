@@ -5,7 +5,7 @@ btn.onclick = function() {
 	sidebar.classList.toggle("active");
 }
 log_out.onclick = function() {
-	window.location.href = 'http://localhost:8080/en-us/logout';
+	window.location.href = '/';
 }
 
 let modalBg = document.querySelector('.modal_bg');
@@ -93,7 +93,7 @@ send.onclick = function() {
 			contentType: "application/json;charset=utf-8",
 			success: function(e) {
 				alert("成功更改資料")
-				window.location.href = 'http://localhost:8080/backstage/pages/MemberControl';
+				window.location.href = '/backstage/pages/MemberControl';
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
 				console.log(xhr.status);
@@ -109,7 +109,7 @@ send.onclick = function() {
 			contentType: "application/json;charset=utf-8",
 			success: function(e) {
 				alert("成功新增資料")
-				window.location.href = 'http://localhost:8080/backstage/pages/MemberControl';
+				window.location.href = '/backstage/pages/MemberControl';
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
 				console.log(xhr.status);
@@ -132,7 +132,7 @@ jQuery
 					+ b.useraccount
 					+ '</td><td style="display: none;">'
 					+ b.userpassword
-					+ '</td><td><a href="http://localhost:8080/backstage/pages/MemberInformation">'
+					+ '</td><td><a href="/backstage/pages/MemberInformation">'
 					+ b.membername
 					+ '</a></td><td>'
 					+ b.birthday

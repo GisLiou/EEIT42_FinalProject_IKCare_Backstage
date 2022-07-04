@@ -5,7 +5,7 @@ btn.onclick = function() {
 	sidebar.classList.toggle("active");
 }
 log_out.onclick = function() {
-	window.location.href = 'http://localhost:8080/';
+	window.location.href = '/';
 }
 
 let modalBg = document.querySelector('.modal_bg');
@@ -83,7 +83,7 @@ send.onclick = function() {
 			contentType: "application/json;charset=utf-8",
 			success: function(e) {
 				alert("成功更改資料")
-				window.location.href = 'http://localhost:8080/backstage/pages/SuppliesDisplay'
+				window.location.href = '/backstage/pages/SuppliesDisplay'
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
 				console.log(xhr.status);
@@ -99,7 +99,7 @@ send.onclick = function() {
 			contentType: "application/json;charset=utf-8",
 			success: function(e) {
 				alert("成功新增資料")
-				window.location.href = 'http://localhost:8080/backstage/pages/SuppliesDisplay'
+				window.location.href = '/backstage/pages/SuppliesDisplay'
 			},
 			error: function(xhr, ajaxOptions, thrownError) {
 				console.log(xhr.status);

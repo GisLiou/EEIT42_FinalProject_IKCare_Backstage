@@ -11,19 +11,19 @@ btn.onclick = function() {
 }
 
 funcmembers.onclick = function() {
-	window.location.href = 'http://localhost:8080/backstage/pages/MemberControl';
+	window.location.href = '/backstage/pages/MemberControl';
 }
 funcproducts.onclick = function() {
-	window.location.href = 'http://localhost:8080/backstage/pages/Product';
+	window.location.href = '/backstage/pages/Product';
 }
 funcsupplies.onclick = function() {
-	window.location.href = 'http://localhost:8080/backstage/pages/SuppliesDisplay';
+	window.location.href = '/backstage/pages/SuppliesDisplay';
 }
 funcorders.onclick = function() {
-	window.location.href = 'http://localhost:8080/backstage/pages/OrdersDisplay';
+	window.location.href = '/backstage/pages/OrdersDisplay';
 }
 
 log_out.onclick = function() {
-	window.location.href = 'http://localhost:8080/';
+	window.location.href = '/';
 
 }
